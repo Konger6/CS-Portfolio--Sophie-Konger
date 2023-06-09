@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script>
+        function openResumeInNewTab() {
+          window.open("resume.html", "_blank");
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
     <script src="path/to/three.min.js"></script>
     <title>CS Portfolio</title>
@@ -13,16 +18,35 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="resume.html" target="_blank">Resume</a></li>
             </ul>
         </nav>
     </div>
+
+    <div class="sliding-bar">
+        <div class="text-wrapper">
+            <p class="scrolling-text">Full Stack Developer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AI Engineer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SI Instructor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pool Supervisor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Merck Data Mine</p>
+        </div>
+    </div>
+      
     
     <div class="page-section" id="about">
         <div class="container">
-            <h2>About Me!</h2>
-            <p> Full Stack Developer </p>
+          <div class="about-content">
+            <div class="text">
+              <h2>About Me!</h2>
+              <p>Full Stack Developer</p>
+              <div class="button"><button class="resume-button" onclick="openResumeInNewTab()">View Resume</button></div>
+            </div>
+            <div class="image">
+              <a href="headshot.png" target="_blank"><img src="headshot.png" alt="headshot.png" width="250"></a>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
+      
+      
+      
 
     <div class="page-section" id="projects">
         <div class="container">
@@ -36,8 +60,8 @@
             <h2>Contact Me</h2>
             <p>You can reach out to me through the following contact information:</p>
             <ul>
-                <li>Email: example@example.com</li>
-                <li>Phone: 123-456-7890</li>
+                <li>Email: Konger@Purdue.edu</li>
+                <li>Phone: (317) 771-3707</li>
             </ul>
         </div>
     </div>
